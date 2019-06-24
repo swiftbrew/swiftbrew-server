@@ -39,6 +39,7 @@ public func routes(_ router: Router) throws {
             if result.ok {
                 return .ok
             } else {
+                // TODO: Properly handle error
                 return .internalServerError
             }
         }
